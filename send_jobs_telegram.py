@@ -15,7 +15,7 @@ def send(text):
 # ─── NÉGOCIATEUR SITE RADIO TELECOM ───────────────────────────────────────────
 
 send("""🔍 <b>RECHERCHE EMPLOI — RÉSULTATS DU JOUR</b>
-📅 04/06/2026
+📅 01/07/2026
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 🟠 POSTE 1 : NÉGOCIATEUR SITE RADIO TELECOM
@@ -31,6 +31,30 @@ jobs_negociateur = [
         "lien": "https://fr.linkedin.com/jobs/view/n%C3%A9gociateur-telecom-sites-gsm-radio-h-f-at-ltd-3779231295"
     },
     {
+        "titre": "Négociateur Telecom - Sites GSM Radio H/F",
+        "entreprise": "LTd",
+        "lieu": "Le Havre (76)",
+        "type": "CDI",
+        "source": "LinkedIn",
+        "lien": "https://fr.linkedin.com/jobs/view/n%C3%A9gociateur-telecom-sites-gsm-radio-h-f-at-ltd-3779233332"
+    },
+    {
+        "titre": "Négociateur de Sites Radio H/F",
+        "entreprise": "VPI Telecom",
+        "lieu": "Paris, Île-de-France",
+        "type": "CDI",
+        "source": "LinkedIn",
+        "lien": "https://fr.linkedin.com/jobs/view/n%C3%A9gociateur-de-sites-radio-h-f-at-vpi-telecom-3329554722"
+    },
+    {
+        "titre": "Négociateur Telecom Radio F/H (x)",
+        "entreprise": "Amaris Consulting",
+        "lieu": "France",
+        "type": "CDI",
+        "source": "LinkedIn",
+        "lien": "https://fr.linkedin.com/jobs/view/n%C3%A9gociateur-telecom-radio-f-h-x-at-amaris-consulting-3388904413"
+    },
+    {
         "titre": "Négociateur de Site Radio",
         "entreprise": "Diverses entreprises",
         "lieu": "France",
@@ -39,31 +63,15 @@ jobs_negociateur = [
         "lien": "https://www.apec.fr/candidat/recherche-emploi.html/emploi?motsCles=N%C3%89GOCIATEUR+DE+SITE+RADIO"
     },
     {
-        "titre": "Négociateur Télécom",
-        "entreprise": "VINCI, Akinext, Eiffage, ND-Ingénierie",
-        "lieu": "France (Paris, Nantes, Saint-Herblain...)",
-        "type": "CDI/CDD",
-        "source": "APEC",
-        "lien": "https://www.apec.fr/candidat/recherche-emploi.html/emploi?motsCles=N%C3%A9gociateur+T%C3%A9l%C3%A9com"
-    },
-    {
-        "titre": "Concepteur Télécom F/H",
-        "entreprise": "Eiffage Énergie Systèmes",
-        "lieu": "Toulouse (31)",
-        "type": "CDI",
-        "source": "Indeed",
-        "lien": "https://to.indeed.com/aat9kb4jmyg9"
-    },
-    {
-        "titre": "Toutes offres Négociateur Telecom Mobile",
+        "titre": "49 offres — Négociateur Telecom (H/F)",
         "entreprise": "Multiples entreprises",
         "lieu": "France",
         "type": "Divers",
-        "source": "Indeed",
-        "lien": "https://fr.indeed.com/q-negociateur-sites-telecom-mobile-emplois.html"
+        "source": "LinkedIn",
+        "lien": "https://fr.linkedin.com/jobs/n%C3%A9gociateur-telecom-(h-f)-emplois"
     },
     {
-        "titre": "Toutes offres Négociateur Telecom",
+        "titre": "Toutes offres Négociateur Télécom",
         "entreprise": "Multiples entreprises",
         "lieu": "France",
         "type": "Divers",
@@ -87,20 +95,20 @@ send("""━━━━━━━━━━━━━━━━━━━━━━━━
 
 jobs_cdp = [
     {
+        "titre": "Chef de Projet Radio F/H",
+        "entreprise": "Eiffage Énergie Systèmes",
+        "lieu": "Cuincy (59)",
+        "type": "CDI",
+        "source": "Indeed",
+        "lien": "https://to.indeed.com/aaz6ymlwvlnb"
+    },
+    {
         "titre": "Chef de Projet Déploiement H/F",
         "entreprise": "NRJ AUDIO",
         "lieu": "Vénissieux (69)",
         "type": "CDI",
         "source": "Indeed",
-        "lien": "https://to.indeed.com/aabfgctwg626"
-    },
-    {
-        "titre": "Ingénieur Réseau Projet H/F",
-        "entreprise": "Seaowl Technology Solutions",
-        "lieu": "Ollioules (83)",
-        "type": "CDI",
-        "source": "Indeed",
-        "lien": "https://to.indeed.com/aal98jmf2hxm"
+        "lien": "https://to.indeed.com/aacfrp42kpst"
     },
     {
         "titre": "Conducteur de Travaux Radio H/F",
@@ -108,15 +116,39 @@ jobs_cdp = [
         "lieu": "Flins-sur-Seine (78)",
         "type": "CDI",
         "source": "Indeed",
-        "lien": "https://to.indeed.com/aas6c9txv667"
+        "lien": "https://to.indeed.com/aa84ktdcj2sw"
     },
     {
-        "titre": "Ingénieur Senior Telecom - Oil & Gas H/F",
-        "entreprise": "NEO2",
-        "lieu": "Paris (75)",
+        "titre": "Chef de Projet Déploiement Radio — Secteur Télécom H/F",
+        "entreprise": "ALTEN",
+        "lieu": "Île-de-France",
         "type": "CDI",
-        "source": "Indeed",
-        "lien": "https://to.indeed.com/aaq69xslh9y8"
+        "source": "LinkedIn",
+        "lien": "https://fr.linkedin.com/jobs/view/chef-de-projet-d%C3%A9ploiement-radio-%E2%80%93-secteur-t%C3%A9l%C3%A9com-h-f-at-alten-3302661556/"
+    },
+    {
+        "titre": "Chef de Projet Déploiement Radio H/F",
+        "entreprise": "Groupe Trefle",
+        "lieu": "Boulogne-Billancourt (92)",
+        "type": "CDI",
+        "source": "LinkedIn",
+        "lien": "https://fr.linkedin.com/jobs/view/chef-de-projet-d%C3%A9ploiement-radio-h-f-at-groupe-trefle-3439855062/"
+    },
+    {
+        "titre": "Chef de Projet Déploiement Radio H/F",
+        "entreprise": "Tibco Telecoms",
+        "lieu": "Rennes (35)",
+        "type": "CDI",
+        "source": "LinkedIn",
+        "lien": "https://fr.linkedin.com/jobs/view/chef-de-projet-d%C3%A9ploiement-radio-h-f-at-tibco-telecoms-3554707489"
+    },
+    {
+        "titre": "Chef(fe) de Projet Télécom (Radio) — Dept 33",
+        "entreprise": "Groupe Maestra",
+        "lieu": "Bordeaux (33)",
+        "type": "CDI",
+        "source": "LinkedIn",
+        "lien": "https://fr.linkedin.com/jobs/view/chefs-fes-de-projet-t%C3%A9l%C3%A9com-radio-dept-33-at-groupe-maestra-3378255570"
     },
     {
         "titre": "Chef de Projet Radio Télécom",
@@ -134,30 +166,6 @@ jobs_cdp = [
         "source": "LinkedIn",
         "lien": "https://fr.linkedin.com/jobs/chef-de-projet-deploiement-radio-emplois/"
     },
-    {
-        "titre": "241 offres — Chef de Projet Telecom F/H",
-        "entreprise": "Multiples entreprises",
-        "lieu": "France",
-        "type": "Divers",
-        "source": "LinkedIn",
-        "lien": "https://fr.linkedin.com/jobs/chef-de-projet-telecom-f-h-emplois"
-    },
-    {
-        "titre": "Chef Projet Déploiement Telecom",
-        "entreprise": "Multiples entreprises",
-        "lieu": "France",
-        "type": "Divers",
-        "source": "Jooble",
-        "lien": "https://fr.jooble.org/emploi-chef-projet-deploiement-telecom"
-    },
-    {
-        "titre": "Chef de projet télécom — +70 offres",
-        "entreprise": "Multiples entreprises",
-        "lieu": "France",
-        "type": "CDI/CDD/Intérim",
-        "source": "HelloWork",
-        "lien": "https://www.hellowork.com/fr-fr/emploi/metier_chef-de-projet-telecoms.html"
-    },
 ]
 
 for i, job in enumerate(jobs_cdp, 1):
@@ -173,9 +181,9 @@ send("""━━━━━━━━━━━━━━━━━━━━━━━━
 ✅ <b>Envoi terminé !</b>
 
 📊 <b>Récapitulatif :</b>
-• 6 annonces Négociateur Site Radio
+• 7 annonces Négociateur Site Radio
 • 9 annonces Chef de Projet Site Radio
-• Sources : Indeed, LinkedIn, APEC, HelloWork, Jooble
+• Sources : Indeed, LinkedIn, APEC, HelloWork
 
 🔄 Relance ce script demain pour de nouvelles annonces.
 ━━━━━━━━━━━━━━━━━━━━━━━━━━""")
