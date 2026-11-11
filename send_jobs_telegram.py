@@ -1,7 +1,16 @@
+import os
+import sys
+
 import requests
 
-BOT_TOKEN = "7487820475:AAHl1heNbkQAoHiTgedn8x2oQuZpKX6aMK0"
-CHAT_ID = "968964130"
+BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
+CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
+
+if not BOT_TOKEN or not CHAT_ID:
+    sys.exit(
+        "Set TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID environment variables before running this script."
+    )
+
 BASE_URL = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
 
 def send(text):
@@ -15,7 +24,7 @@ def send(text):
 # ─── NÉGOCIATEUR SITE RADIO TELECOM ───────────────────────────────────────────
 
 send("""🔍 <b>RECHERCHE EMPLOI — RÉSULTATS DU JOUR</b>
-📅 04/06/2026
+📅 11/11/2026
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 🟠 POSTE 1 : NÉGOCIATEUR SITE RADIO TELECOM
@@ -23,52 +32,68 @@ send("""🔍 <b>RECHERCHE EMPLOI — RÉSULTATS DU JOUR</b>
 
 jobs_negociateur = [
     {
-        "titre": "Négociateur Telecom - Sites GSM Radio H/F",
+        "titre": "Négociateur Radio Télécom F/H",
+        "entreprise": "Commercial (H/F)",
+        "lieu": "Boulogne-Billancourt (92)",
+        "type": "CDI",
+        "source": "France Travail",
+        "lien": "https://candidat.francetravail.fr/offres/recherche/detail/5654081"
+    },
+    {
+        "titre": "Négociateur de sites télécoms Radio DI F/H",
+        "entreprise": "Commercial (H/F)",
+        "lieu": "Versailles (78)",
+        "type": "CDI",
+        "source": "France Travail",
+        "lien": "https://candidat.francetravail.fr/offres/recherche/detail/5651471"
+    },
+    {
+        "titre": "Négociateur de Sites Radio F/H",
+        "entreprise": "Commercial (H/F)",
+        "lieu": "Lyon 01 (69)",
+        "type": "CDI",
+        "source": "France Travail",
+        "lien": "https://candidat.francetravail.fr/offres/recherche/detail/5700239"
+    },
+    {
+        "titre": "Négociateur Télécom H/F",
+        "entreprise": "Commercial (H/F)",
+        "lieu": "Vénissieux (69)",
+        "type": "CDI",
+        "source": "France Travail",
+        "lien": "https://candidat.francetravail.fr/offres/recherche/detail/5783435"
+    },
+    {
+        "titre": "Négociateur Telecom H/F",
+        "entreprise": "Commercial (H/F)",
+        "lieu": "Saint-Herblain (44)",
+        "type": "CDI",
+        "source": "France Travail",
+        "lien": "https://candidat.francetravail.fr/offres/recherche/detail/5177606"
+    },
+    {
+        "titre": "Négociateur Télécom Radio (Sites neufs) F/H",
+        "entreprise": "Commercial (H/F)",
+        "lieu": "Nantes (44)",
+        "type": "CDI",
+        "source": "France Travail",
+        "lien": "https://candidat.francetravail.fr/offres/recherche/detail/5228620"
+    },
+    {
+        "titre": "Negociateur Telecom F/H",
+        "entreprise": "Commercial (H/F)",
+        "lieu": "Nice (06)",
+        "type": "CDI",
+        "source": "France Travail",
+        "lien": "https://candidat.francetravail.fr/offres/recherche/detail/5651598"
+    },
+    {
+        "titre": "Chargé d'Affaires GSM / Radio H/F",
         "entreprise": "LTd",
-        "lieu": "Éleu-Dit-Leauwette (62)",
-        "type": "CDI",
-        "source": "LinkedIn",
-        "lien": "https://fr.linkedin.com/jobs/view/n%C3%A9gociateur-telecom-sites-gsm-radio-h-f-at-ltd-3779231295"
-    },
-    {
-        "titre": "Négociateur de Site Radio",
-        "entreprise": "Diverses entreprises",
         "lieu": "France",
         "type": "CDI",
-        "source": "APEC",
-        "lien": "https://www.apec.fr/candidat/recherche-emploi.html/emploi?motsCles=N%C3%89GOCIATEUR+DE+SITE+RADIO"
-    },
-    {
-        "titre": "Négociateur Télécom",
-        "entreprise": "VINCI, Akinext, Eiffage, ND-Ingénierie",
-        "lieu": "France (Paris, Nantes, Saint-Herblain...)",
-        "type": "CDI/CDD",
-        "source": "APEC",
-        "lien": "https://www.apec.fr/candidat/recherche-emploi.html/emploi?motsCles=N%C3%A9gociateur+T%C3%A9l%C3%A9com"
-    },
-    {
-        "titre": "Concepteur Télécom F/H",
-        "entreprise": "Eiffage Énergie Systèmes",
-        "lieu": "Toulouse (31)",
-        "type": "CDI",
-        "source": "Indeed",
-        "lien": "https://to.indeed.com/aat9kb4jmyg9"
-    },
-    {
-        "titre": "Toutes offres Négociateur Telecom Mobile",
-        "entreprise": "Multiples entreprises",
-        "lieu": "France",
-        "type": "Divers",
-        "source": "Indeed",
-        "lien": "https://fr.indeed.com/q-negociateur-sites-telecom-mobile-emplois.html"
-    },
-    {
-        "titre": "Toutes offres Négociateur Telecom",
-        "entreprise": "Multiples entreprises",
-        "lieu": "France",
-        "type": "Divers",
-        "source": "HelloWork",
-        "lien": "https://www.hellowork.com/fr-fr/emploi/metier_negociateur-telecom.html"
+        "source": "Engagement Jeunes",
+        "lien": "https://www.engagement-jeunes.com/fr/detail-offre/38566153/cdi-ltd-charge-d-affaires-gsm-radio-h-f.html"
     },
 ]
 
@@ -87,76 +112,68 @@ send("""━━━━━━━━━━━━━━━━━━━━━━━━
 
 jobs_cdp = [
     {
-        "titre": "Chef de Projet Déploiement H/F",
-        "entreprise": "NRJ AUDIO",
-        "lieu": "Vénissieux (69)",
-        "type": "CDI",
-        "source": "Indeed",
-        "lien": "https://to.indeed.com/aabfgctwg626"
-    },
-    {
-        "titre": "Ingénieur Réseau Projet H/F",
-        "entreprise": "Seaowl Technology Solutions",
-        "lieu": "Ollioules (83)",
-        "type": "CDI",
-        "source": "Indeed",
-        "lien": "https://to.indeed.com/aal98jmf2hxm"
-    },
-    {
-        "titre": "Conducteur de Travaux Radio H/F",
-        "entreprise": "ENSIO",
-        "lieu": "Flins-sur-Seine (78)",
-        "type": "CDI",
-        "source": "Indeed",
-        "lien": "https://to.indeed.com/aas6c9txv667"
-    },
-    {
-        "titre": "Ingénieur Senior Telecom - Oil & Gas H/F",
-        "entreprise": "NEO2",
-        "lieu": "Paris (75)",
-        "type": "CDI",
-        "source": "Indeed",
-        "lien": "https://to.indeed.com/aaq69xslh9y8"
-    },
-    {
-        "titre": "Chef de Projet Radio Télécom",
+        "titre": "Chef/Cheffe de projet GSM H/F",
         "entreprise": "Diverses entreprises",
+        "lieu": "Juvisy-sur-Orge (91)",
+        "type": "CDI",
+        "source": "France Travail",
+        "lien": "https://candidat.francetravail.fr/offres/recherche/detail/6105608"
+    },
+    {
+        "titre": "Chef de Projet Radio H/F",
+        "entreprise": "Diverses entreprises",
+        "lieu": "Saint-Denis (93)",
+        "type": "CDI",
+        "source": "France Travail",
+        "lien": "https://candidat.francetravail.fr/offres/recherche/detail/5331639"
+    },
+    {
+        "titre": "Chef de projet Radio F/H",
+        "entreprise": "Diverses entreprises",
+        "lieu": "Cuincy (59)",
+        "type": "CDI",
+        "source": "France Travail",
+        "lien": "https://candidat.francetravail.fr/offres/recherche/detail/5647665"
+    },
+    {
+        "titre": "Chef/cheffe de projet Fibre RADIO H/F",
+        "entreprise": "Diverses entreprises",
+        "lieu": "Saint-Germain-en-Laye (78)",
+        "type": "CDI",
+        "source": "France Travail",
+        "lien": "https://candidat.francetravail.fr/offres/recherche/detail/5627738"
+    },
+    {
+        "titre": "Chef/cheffe de projet Fibre RADIO H/F",
+        "entreprise": "Diverses entreprises",
+        "lieu": "Chelles (77)",
+        "type": "CDI",
+        "source": "France Travail",
+        "lien": "https://candidat.francetravail.fr/offres/recherche/detail/5627914"
+    },
+    {
+        "titre": "Chef de Projet Radio H/F",
+        "entreprise": "Diverses entreprises",
+        "lieu": "Vitrolles (13)",
+        "type": "CDI",
+        "source": "France Travail",
+        "lien": "https://candidat.francetravail.fr/offres/recherche/detail/5661603"
+    },
+    {
+        "titre": "Chef de Projet Télécom Radio (sites mobiles)",
+        "entreprise": "AGH Consulting",
+        "lieu": "Clermont-Ferrand (63)",
+        "type": "Freelance",
+        "source": "Free-Work",
+        "lien": "https://www.free-work.com/fr/tech-it/job-mission/responsable-telecom/chef-de-projet-telecom-radio-1"
+    },
+    {
+        "titre": "Consultant Chef de Projet Déploiement Réseaux Mobiles Indoor F/H",
+        "entreprise": "Orange SA",
         "lieu": "France",
         "type": "CDI",
-        "source": "APEC",
-        "lien": "https://www.apec.fr/candidat/recherche-emploi.html/emploi?motsCles=Chef+de+projet+Radio+T%C3%A9l%C3%A9com"
-    },
-    {
-        "titre": "43 offres — Chef de Projet Déploiement Radio",
-        "entreprise": "Multiples entreprises",
-        "lieu": "France",
-        "type": "Divers",
-        "source": "LinkedIn",
-        "lien": "https://fr.linkedin.com/jobs/chef-de-projet-deploiement-radio-emplois/"
-    },
-    {
-        "titre": "241 offres — Chef de Projet Telecom F/H",
-        "entreprise": "Multiples entreprises",
-        "lieu": "France",
-        "type": "Divers",
-        "source": "LinkedIn",
-        "lien": "https://fr.linkedin.com/jobs/chef-de-projet-telecom-f-h-emplois"
-    },
-    {
-        "titre": "Chef Projet Déploiement Telecom",
-        "entreprise": "Multiples entreprises",
-        "lieu": "France",
-        "type": "Divers",
-        "source": "Jooble",
-        "lien": "https://fr.jooble.org/emploi-chef-projet-deploiement-telecom"
-    },
-    {
-        "titre": "Chef de projet télécom — +70 offres",
-        "entreprise": "Multiples entreprises",
-        "lieu": "France",
-        "type": "CDI/CDD/Intérim",
-        "source": "HelloWork",
-        "lien": "https://www.hellowork.com/fr-fr/emploi/metier_chef-de-projet-telecoms.html"
+        "source": "Engagement Jeunes",
+        "lien": "https://www.engagement-jeunes.com/fr/detail-offre/39405511/cdi-orange-sa-consultant-chef-de-projet-deploiement-de-reseaux-mobiles-indoor-f-h.html"
     },
 ]
 
@@ -173,9 +190,9 @@ send("""━━━━━━━━━━━━━━━━━━━━━━━━
 ✅ <b>Envoi terminé !</b>
 
 📊 <b>Récapitulatif :</b>
-• 6 annonces Négociateur Site Radio
-• 9 annonces Chef de Projet Site Radio
-• Sources : Indeed, LinkedIn, APEC, HelloWork, Jooble
+• 8 annonces Négociateur Site Radio
+• 8 annonces Chef de Projet Site Radio
+• Sources : France Travail, Free-Work, Engagement Jeunes
 
 🔄 Relance ce script demain pour de nouvelles annonces.
 ━━━━━━━━━━━━━━━━━━━━━━━━━━""")
